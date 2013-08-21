@@ -1,3 +1,4 @@
+<? $curr_page['template']=''; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,15 +16,13 @@
         of Soundcloud for any track.
     </p>
     <p>
-        Open <a href="http://soundcloud.com/defectedrecords" target="_blank">DefectedRecords</a> on Soundcloud (new tab).
-        View <a href="/admin/radio/soundcloudtrack/" target="_blank">soundcloud tracks</a> within the admin.</p>
 	<p><label>Soundcloud Embed data</label><br><textarea cols="50" rows="2" id="sciframe" name="sciframe" class="text"></textarea></p>
     <h2>OR</h2>
     <p><label>Soundcloud ID</label><br><input id="scid" name="scid" type="text" class="text" /></p>
 
 	<div class="mceActionPanel">
-		<input type="button" id="insert" name="insert" value="{#insert}" onclick="SoundcloudDialog.insert();" />
-		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="SoundcloudDialog.close();" />
+		<input type="button" id="insert" name="insert" value="{#example_dlg.insert}" onclick="SoundcloudDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="{#example_dlg.cancel}" onclick="SoundcloudDialog.close();" />
 	</div>
 </form>
 
